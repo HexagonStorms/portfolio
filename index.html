@@ -52,6 +52,17 @@
                 <div class="border-element fixed right-0 svelte-2wfxpa" style="top: var(--padding); bottom: var(--padding); width: var(--padding)"></div>
                 <div class="border-element fixed inset-x-0 bottom-0 svelte-2wfxpa" style="height: var(--padding)"></div>
                 <div class="bg-background h-dvh overflow-auto" id="page-content">
+                    <div class="pointer-events-none fixed inset-0 z-50">
+                        <svg width="100%" height="100%" preserveAspectRatio="none">
+                            <path class="border-path fill-none" stroke="#999999" stroke-width="2" d="
+                                M 32 32
+                                L 1408 32
+                                L 1408 746
+                                L 32 746
+                                L 32 32
+                            " style="--path-length: 4180;"></path>
+                        </svg>
+                    </div>
                     <main class="no-scrollbar relative flex flex-col p-16">
                         <div class="intro-animation svelte-zx8le4">
                             <div class="blobs-wrapper svelte-zx8le4" style="--x: -21.371755252230322px; --y: -14.665904119520734px; --scale: 0.8">
@@ -405,7 +416,7 @@
                                     <h2 class="pb-4 text-3xl font-bold">Education</h2>
                                     <div class="mt-4">
                                         <h3 class="text-xl font-bold">Bachelor of Science in Computer Science (Cum Laude)</h3>
-                                        <p>Texas State University, San Marcos, TX | August 2011 - May 2015</p>
+                                        <p class="subtitle">Texas State University, San Marcos, TX | August 2011 - May 2015</p>
                                     </div>
                                 </section>
                                 
@@ -444,7 +455,10 @@
                     </div>
                     
                     <footer class="flex w-full flex-col items-center justify-center py-12 text-sm">
-                        <p class="py-8">Based in Portland, Oregon (originally from Texas)</p>
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="./assets/portland3.png" alt="Portland, Oregon" class="mb-2 portland-footer">
+                            <p class="py-2">Made in Portland, Oregon</p>
+                        </div>
                     </footer>
                 </div>
             </div>
@@ -452,6 +466,6 @@
     </div>
 
     <!-- Comment out the posthog config script for local testing -->
-    <!-- <script type="text/javascript" crossorigin="anonymous" src="./posthog-config.js"></script> -->
+    <script type="text/javascript" crossorigin="anonymous" src="./posthog-config.js"></script>
 </body>
 </html>
