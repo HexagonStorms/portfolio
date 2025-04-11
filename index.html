@@ -15,6 +15,7 @@
     <link href="./components.css" rel="stylesheet">
     <link href="./custom-components.css" rel="stylesheet">
     <link href="./toast-notifications.css" rel="stylesheet">
+    <link href="./skills-section.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
     <!-- Tailwind CSS CDN -->
@@ -44,18 +45,18 @@
 </head>
 
 <body data-sveltekit-preload-data="hover" class="bg-background">
-    <div style="display: contents">
+    <div class="contents-display">
         <div class="relative overflow-hidden">
-            <div class="h-dvh w-full overflow-auto" style="--padding: 32px">
-                <div class="border-element fixed inset-x-0 top-0 svelte-2wfxpa" style="height: var(--padding)"></div>
-                <div class="border-element fixed left-0 svelte-2wfxpa" style="top: var(--padding); bottom: var(--padding); width: var(--padding)"></div>
-                <div class="border-element fixed right-0 svelte-2wfxpa" style="top: var(--padding); bottom: var(--padding); width: var(--padding)"></div>
-                <div class="border-element fixed inset-x-0 bottom-0 svelte-2wfxpa" style="height: var(--padding)"></div>
+            <div class="h-dvh w-full overflow-auto border-container">
+                <div class="border-element fixed inset-x-0 top-0 svelte-2wfxpa"></div>
+                <div class="border-element fixed left-0 svelte-2wfxpa"></div>
+                <div class="border-element fixed right-0 svelte-2wfxpa"></div>
+                <div class="border-element fixed inset-x-0 bottom-0 svelte-2wfxpa"></div>
                 <div class="bg-background h-dvh overflow-auto" id="page-content">
                     <div class="pointer-events-none fixed inset-0 z-50">
 						<svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
 						  <path 
-							class="border-path fill-none" 
+							class="border-path fill-none border-path-style" 
 							stroke="#999999" 
 							stroke-width="0.5" 
 							d="
@@ -64,21 +65,20 @@
 							  L 98 98
 							  L 2 98
 							  L 2 2
-							" 
-							style="--path-length: 392;">
+							">
 						  </path>
 						</svg>
 					  </div>
                     <main class="no-scrollbar relative flex flex-col p-16">
                         <div class="intro-animation svelte-zx8le4">
-                            <div class="blobs-wrapper svelte-zx8le4" style="--x: -21.371755252230322px; --y: -14.665904119520734px; --scale: 0.8">
-                                <div class="blob svelte-zx8le4" id="blob-1" style="--scale-min: 0.5; --scale-max: 1; --animation-duration: 10s; --offsetX: -21.371755252230322px; --offsetY: -14.665904119520734px;">
+                            <div class="blobs-wrapper svelte-zx8le4 blobs-animation">
+                                <div class="blob svelte-zx8le4" id="blob-1">
                                     <div class="blob-inner svelte-zx8le4"></div>
                                 </div>
-                                <div class="blob svelte-zx8le4" id="blob-2" style="--scale-min: 0.75; --scale-max: 1.25; --animation-duration: 8s; --offsetX: -4.2743510504460644px; --offsetY: -2.933180823904147px;">
+                                <div class="blob svelte-zx8le4" id="blob-2">
                                     <div class="blob-inner svelte-zx8le4"></div>
                                 </div>
-                                <div class="blob svelte-zx8le4" id="blob-3" style="--scale-min: 1; --scale-max: 1.25; --animation-duration: 6s; --offsetX: -12.823053151338193px; --offsetY: -8.79954247171244px;">
+                                <div class="blob svelte-zx8le4" id="blob-3">
                                     <div class="blob-inner svelte-zx8le4"></div>
                                 </div>
                             </div>
@@ -140,82 +140,82 @@
 									  <div class="skills-grid">
 
 										<!-- PHP -->
-										<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 70px; background-color: rgba(173, 216, 230, 0.1); border-radius: 8px; padding: 0.5rem; transition: transform 0.2s;">
-										  <img src="./svgs/php.svg" style="width: 24px; height: 24px;" alt="PHP">
-										  <span style="font-size: 0.75rem; font-weight: 500; margin-top: 0.25rem; text-align: center;">PHP</span>
+										<div class="skill-item">
+										  <img src="./svgs/php.svg" alt="PHP">
+										  <span>PHP</span>
 										</div>
 										
 										<!-- JavaScript -->
-										<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 70px; background-color: rgba(173, 216, 230, 0.1); border-radius: 8px; padding: 0.5rem; transition: transform 0.2s;">
-										  <img src="./svgs/javascript.svg" style="width: 24px; height: 24px;" alt="JavaScript">
-										  <span style="font-size: 0.75rem; font-weight: 500; margin-top: 0.25rem; text-align: center;">JavaScript</span>
+										<div class="skill-item">
+										  <img src="./svgs/javascript.svg" alt="JavaScript">
+										  <span>JavaScript</span>
 										</div>
 										
 										<!-- React -->
-										<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 70px; background-color: rgba(173, 216, 230, 0.1); border-radius: 8px; padding: 0.5rem; transition: transform 0.2s;">
-										  <img src="./svgs/react.svg" style="width: 24px; height: 24px;" alt="React">
-										  <span style="font-size: 0.75rem; font-weight: 500; margin-top: 0.25rem; text-align: center;">React</span>
+										<div class="skill-item">
+										  <img src="./svgs/react.svg" alt="React">
+										  <span>React</span>
 										</div>
 										
 										<!-- Laravel -->
-										<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 70px; background-color: rgba(173, 216, 230, 0.1); border-radius: 8px; padding: 0.5rem; transition: transform 0.2s;">
-										  <img src="./svgs/laravel.svg" style="width: 24px; height: 24px;" alt="Laravel">
-										  <span style="font-size: 0.75rem; font-weight: 500; margin-top: 0.25rem; text-align: center;">Laravel</span>
+										<div class="skill-item">
+										  <img src="./svgs/laravel.svg" alt="Laravel">
+										  <span>Laravel</span>
 										</div>
 										
 										<!-- TypeScript -->
-										<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 70px; background-color: rgba(173, 216, 230, 0.1); border-radius: 8px; padding: 0.5rem; transition: transform 0.2s;">
-										  <img src="./svgs/typescript.svg" style="width: 24px; height: 24px;" alt="TypeScript">
-										  <span style="font-size: 0.75rem; font-weight: 500; margin-top: 0.25rem; text-align: center;">TypeScript</span>
+										<div class="skill-item">
+										  <img src="./svgs/typescript.svg" alt="TypeScript">
+										  <span>TypeScript</span>
 										</div>
 										
 										<!-- AWS -->
-										<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 70px; background-color: rgba(173, 216, 230, 0.1); border-radius: 8px; padding: 0.5rem; transition: transform 0.2s;">
-										  <img src="./svgs/aws.svg" style="width: 24px; height: 24px;" alt="AWS">
-										  <span style="font-size: 0.75rem; font-weight: 500; margin-top: 0.25rem; text-align: center;">AWS</span>
+										<div class="skill-item">
+										  <img src="./svgs/aws.svg" alt="AWS">
+										  <span>AWS</span>
 										</div>
 										
 										<!-- Node.js -->
-										<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 70px; background-color: rgba(173, 216, 230, 0.1); border-radius: 8px; padding: 0.5rem; transition: transform 0.2s;">
-										  <img src="./svgs/nodejs.svg" style="width: 24px; height: 24px;" alt="Node.js">
-										  <span style="font-size: 0.75rem; font-weight: 500; margin-top: 0.25rem; text-align: center;">Node.js</span>
+										<div class="skill-item">
+										  <img src="./svgs/nodejs.svg" alt="Node.js">
+										  <span>Node.js</span>
 										</div>
 										
 										<!-- Tailwind -->
-										<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 70px; background-color: rgba(173, 216, 230, 0.1); border-radius: 8px; padding: 0.5rem; transition: transform 0.2s;">
-										  <img src="./svgs/tailwind.svg" style="width: 24px; height: 24px;" alt="Tailwind">
-										  <span style="font-size: 0.75rem; font-weight: 500; margin-top: 0.25rem; text-align: center;">Tailwind</span>
+										<div class="skill-item">
+										  <img src="./svgs/tailwind.svg" alt="Tailwind">
+										  <span>Tailwind</span>
 										</div>
 										
 										<!-- Docker -->
-										<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 70px; background-color: rgba(173, 216, 230, 0.1); border-radius: 8px; padding: 0.5rem; transition: transform 0.2s;">
-										  <img src="./svgs/docker.svg" style="width: 24px; height: 24px;" alt="Docker">
-										  <span style="font-size: 0.75rem; font-weight: 500; margin-top: 0.25rem; text-align: center;">Docker</span>
+										<div class="skill-item">
+										  <img src="./svgs/docker.svg" alt="Docker">
+										  <span>Docker</span>
 										</div>
 										
 										<!-- MySQL -->
-										<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 70px; background-color: rgba(173, 216, 230, 0.1); border-radius: 8px; padding: 0.5rem; transition: transform 0.2s;">
-										  <img src="./svgs/mysql.svg" style="width: 24px; height: 24px;" alt="MySQL">
-										  <span style="font-size: 0.75rem; font-weight: 500; margin-top: 0.25rem; text-align: center;">MySQL</span>
+										<div class="skill-item">
+										  <img src="./svgs/mysql.svg" alt="MySQL">
+										  <span>MySQL</span>
 										</div>
 									  </div>
 									  
 									  <!-- Additional skills tags -->
-									  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;" class="my-5">
-										<span style="display: inline-flex; align-items: center; justify-content: center; background-color: rgba(173, 216, 230, 0.1); border-radius: 9999px; padding: 0.25rem 0.75rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s ease;">REST APIs</span>
-										<span style="display: inline-flex; align-items: center; justify-content: center; background-color: rgba(173, 216, 230, 0.1); border-radius: 9999px; padding: 0.25rem 0.75rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s ease;">GraphQL</span>
-										<span style="display: inline-flex; align-items: center; justify-content: center; background-color: rgba(173, 216, 230, 0.1); border-radius: 9999px; padding: 0.25rem 0.75rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s ease;">DynamoDB</span>
-										<span style="display: inline-flex; align-items: center; justify-content: center; background-color: rgba(173, 216, 230, 0.1); border-radius: 9999px; padding: 0.25rem 0.75rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s ease;">MySQL</span>
-										<span style="display: inline-flex; align-items: center; justify-content: center; background-color: rgba(173, 216, 230, 0.1); border-radius: 9999px; padding: 0.25rem 0.75rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s ease;">PostgreSQL</span>
-										<span style="display: inline-flex; align-items: center; justify-content: center; background-color: rgba(173, 216, 230, 0.1); border-radius: 9999px; padding: 0.25rem 0.75rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s ease;">CI/CD</span>
-										<span style="display: inline-flex; align-items: center; justify-content: center; background-color: rgba(173, 216, 230, 0.1); border-radius: 9999px; padding: 0.25rem 0.75rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s ease;">Microservices</span>
-										<span style="display: inline-flex; align-items: center; justify-content: center; background-color: rgba(173, 216, 230, 0.1); border-radius: 9999px; padding: 0.25rem 0.75rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s ease;">Event-Driven</span>
-										<span style="display: inline-flex; align-items: center; justify-content: center; background-color: rgba(173, 216, 230, 0.1); border-radius: 9999px; padding: 0.25rem 0.75rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s ease;">Serverless</span>
-										<span style="display: inline-flex; align-items: center; justify-content: center; background-color: rgba(173, 216, 230, 0.1); border-radius: 9999px; padding: 0.25rem 0.75rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s ease;">Redis</span>
-										<span style="display: inline-flex; align-items: center; justify-content: center; background-color: rgba(173, 216, 230, 0.1); border-radius: 9999px; padding: 0.25rem 0.75rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s ease;">Angular</span>
-										<span style="display: inline-flex; align-items: center; justify-content: center; background-color: rgba(173, 216, 230, 0.1); border-radius: 9999px; padding: 0.25rem 0.75rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s ease;">Firebase</span>
-										<span style="display: inline-flex; align-items: center; justify-content: center; background-color: rgba(173, 216, 230, 0.1); border-radius: 9999px; padding: 0.25rem 0.75rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s ease;">MongoDB</span>
-										<span style="display: inline-flex; align-items: center; justify-content: center; background-color: rgba(173, 216, 230, 0.1); border-radius: 9999px; padding: 0.25rem 0.75rem; font-size: 0.875rem; font-weight: 500; transition: all 0.2s ease;">Terraform</span>
+									  <div class="skills-tags">
+										<span class="skill-tag">REST APIs</span>
+										<span class="skill-tag">GraphQL</span>
+										<span class="skill-tag">DynamoDB</span>
+										<span class="skill-tag">MySQL</span>
+										<span class="skill-tag">PostgreSQL</span>
+										<span class="skill-tag">CI/CD</span>
+										<span class="skill-tag">Microservices</span>
+										<span class="skill-tag">Event-Driven</span>
+										<span class="skill-tag">Serverless</span>
+										<span class="skill-tag">Redis</span>
+										<span class="skill-tag">Angular</span>
+										<span class="skill-tag">Firebase</span>
+										<span class="skill-tag">MongoDB</span>
+										<span class="skill-tag">Terraform</span>
 									  </div>
 									</div>
 								  </section>
