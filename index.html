@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-firstvisit="true" class="cktabrij idc0_343">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="./favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Load a simplified core CSS file to ensure basic styling works -->
+    <link href="./core-styles.css" rel="stylesheet">
+    
+    <!-- Then load the full styles - if there are issues, core-styles will still provide basic styling -->
+    <link href="./tailwind-base.css" rel="stylesheet">
+    <link href="./animations.css" rel="stylesheet">
+    <link href="./social-icons.css" rel="stylesheet">
+    <link href="./components.css" rel="stylesheet">
+    <link href="./toast-notifications.css" rel="stylesheet">
+    
+    <title>Josh Plaza | Senior Software Engineer</title>
+    
+    <!-- Comment out the analytics script for local testing -->
+    <!-- <script defer="" data-domain="josh.plaza" src="./analytics.js"></script> -->
+    
+    <meta name="description" content="Senior Software Engineer with over 9 years of experience in PHP, JavaScript, Laravel, React, AWS, and more. Based in Portland, Oregon.">
+    <meta name="keywords" content="software engineer,PHP,JavaScript,Laravel,React,AWS,full stack,Portland,Texas">
+    <meta name="author" content="Josh Plaza">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://joshplaza.com">
+    <meta property="og:title" content="Josh Plaza | Senior Software Engineer">
+    <meta property="og:description" content="Senior Software Engineer with over 9 years of experience in PHP, JavaScript, Laravel, React, AWS, and more.">
+    <meta property="og:image" content="https://joshplaza.com/images/josh-plaza.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://joshplaza.com">
+    <meta property="twitter:title" content="Josh Plaza | Senior Software Engineer">
+    <meta property="twitter:description" content="Senior Software Engineer with over 9 years of experience based in Portland, Oregon.">
+    <meta property="twitter:image" content="https://joshplaza.com/images/josh-plaza.jpg">
+    
+    <style type="text/css">
+        :root {
+            --background: 60 7.5% 5.85%;
+            --foreground: 60 100% 95%;
+            --muted: 240 4.8% 95.9%;
+            --muted-foreground: 60 6% 50%;
+            --popover: 0 0% 100%;
+            --popover-foreground: 240 10% 3.9%;
+            --card: 60 7.5% 5.2%;
+            --card-foreground: 60 100% 95%;
+            --border: 240 5.9% 90%;
+            --input: 240 5.9% 90%;
+            --primary: 60 100% 95%;
+            --primary-foreground: 60 100% 95%;
+            --secondary: 240 4.8% 95.9%;
+            --secondary-foreground: 240 5.9% 10%;
+            --accent: 240 4.8% 95.9%;
+            --accent-foreground: 173 80% 40%;
+            --destructive: 0 72.2% 50.6%;
+            --destructive-foreground: 0 0% 98%;
+            --ring: 240 10% 3.9%;
+            --radius: .5rem;
+        }
+
+        /* Some baseline styles to help rendering */
+        body {
+            background-color: hsl(60, 7.5%, 5.85%);
+            color: hsl(60, 100%, 95%);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        /* Additional custom styles */
+        .tech-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(173, 216, 230, 0.1);
+            border-radius: 9999px;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .tech-badge:hover {
+            transform: translateY(-2px);
+            background-color: rgba(173, 216, 230, 0.2);
+        }
+        
+        .project-card {
+            border-radius: var(--radius);
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            background-color: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background-color: hsl(var(--accent-foreground));
+        }
+        
+        .timeline-item::after {
+            content: "";
+            position: absolute;
+            left: 0.5rem;
+            top: 1.5rem;
+            width: 0.1rem;
+            height: calc(100% + 1rem);
+            background-color: rgba(173, 216, 230, 0.3);
+        }
+        
+        .timeline-item:last-child::after {
+            display: none;
+        }
+    </style>
+</head>
+
+<body data-sveltekit-preload-data="hover" class="bg-background">
+    <div style="display: contents">
+        <div class="relative overflow-hidden">
+            <div class="h-dvh w-full overflow-auto" style="--padding: 32px">
+                <div class="border-element fixed inset-x-0 top-0 svelte-2wfxpa" style="height: var(--padding)"></div>
+                <div class="border-element fixed left-0 svelte-2wfxpa" style="top: var(--padding); bottom: var(--padding); width: var(--padding)"></div>
+                <div class="border-element fixed right-0 svelte-2wfxpa" style="top: var(--padding); bottom: var(--padding); width: var(--padding)"></div>
+                <div class="border-element fixed inset-x-0 bottom-0 svelte-2wfxpa" style="height: var(--padding)"></div>
+                <div class="bg-background h-dvh overflow-auto" id="page-content">
+                    <main class="no-scrollbar relative flex flex-col p-16">
+                        <div class="intro-animation svelte-zx8le4">
+                            <div class="blobs-wrapper svelte-zx8le4" style="--x: -21.371755252230322px; --y: -14.665904119520734px; --scale: 0.8">
+                                <div class="blob svelte-zx8le4" id="blob-1" style="--scale-min: 0.5; --scale-max: 1; --animation-duration: 10s; --offsetX: -21.371755252230322px; --offsetY: -14.665904119520734px;">
+                                    <div class="blob-inner svelte-zx8le4"></div>
+                                </div>
+                                <div class="blob svelte-zx8le4" id="blob-2" style="--scale-min: 0.75; --scale-max: 1.25; --animation-duration: 8s; --offsetX: -4.2743510504460644px; --offsetY: -2.933180823904147px;">
+                                    <div class="blob-inner svelte-zx8le4"></div>
+                                </div>
+                                <div class="blob svelte-zx8le4" id="blob-3" style="--scale-min: 1; --scale-max: 1.25; --animation-duration: 6s; --offsetX: -12.823053151338193px; --offsetY: -8.79954247171244px;">
+                                    <div class="blob-inner svelte-zx8le4"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="sticky top-0 mx-auto h-full w-full max-w-7xl sm:top-16">
+                            <div class="relative flex min-h-[calc(100dvh_+_12rem)] w-full flex-col sm:min-h-[calc(100dvh)] sm:justify-center sm:py-8">
+                                <div class="hero-text flex flex-col gap-8 sm:text-justify svelte-1r2etls">
+                                    <div>
+                                        <h1 class="flex items-end gap-2 text-pretty break-words text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl">Hi, I'm Josh Plaza!</h1>
+                                        <span class="flex items-center gap-1 text-pretty text-sm font-normal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-map-pin">
+                                                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                                                <circle cx="12" cy="10" r="3"></circle>
+                                            </svg>
+                                            Portland, Oregon
+                                        </span>
+                                    </div>
+                                    <h2 class="text-pretty sm:text-lg lg:text-xl">Senior Software Engineer with over 9 years of experience, specializing in <strong>PHP</strong>, <strong>JavaScript</strong>, <strong>Laravel</strong>, and <strong>React</strong>.</h2>
+                                    <p class="prose sm:text-lg">I build robust, scalable applications that solve real business problems. My expertise spans from developing interactive front-end interfaces to designing efficient backend systems. Check out my experience below to see how I've helped companies ship better products faster.</p>
+                                    
+                                    <div class="flex items-center gap-3 mt-4">
+                                        <a href="https://github.com/hexagonstorms" target="_blank" class="transition-transform hover:scale-110">
+                                            <span class="sr-only">GitHub</span> 
+                                            <div class="transition-transform duration-200 hover:scale-105 svelte-jtkbwa" style="width: 2.5rem;">
+                                                <svg id="github-logo-3" viewBox="0 0 350 350" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" class="fill-foreground svelte-jtkbwa">
+                                                    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/joshplaza" target="_blank" class="transition-transform hover:scale-110">
+                                            <span class="sr-only">LinkedIn</span> 
+                                            <div class="fill-foreground svelte-13v4r0n" style="width: 2.5rem; height: 2.5rem;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" class="svelte-13v4r0n">
+                                                    <path id="linkedIn-logo" d="M71.25,0h-52.5C8.39625,0,0,8.39625,0,18.75v52.5C0,81.60375,8.39625,90,18.75,90h52.5C81.6075,90,90,81.60375,90,71.25v-52.5C90,8.39625,81.6075,0,71.25,0ZM30,71.25h-11.25v-41.25L30,30v41.25ZM24.375,25.245c-3.6225,0-6.5625-2.9625-6.5625-6.615s2.94-6.615,6.5625-6.615s6.5625,2.9625,6.5625,6.615-2.93625,6.615-6.5625,6.615ZM75,71.25h-11.25v-21.015c0-12.63-15-11.67375-15,0v21.015h-11.25v-41.25h11.25v6.61875C53.985,26.92125,75,26.205,75,45.90375L75,71.25Z" transform="translate(5 5.090562)" fill-rule="evenodd" class="svelte-13v4r0n"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                        <a href="mailto:hello@joshplaza.com" class="transition-transform hover:scale-110">
+                                            <span class="sr-only">Email</span>
+                                            <div class="fill-foreground" style="width: 2.5rem; height: 2.5rem;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                                    <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                                                    <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-background relative z-[2] w-full">
+                            <div class="from-background gradient-blur dots pointer-events-none absolute -top-48 h-48 w-full bg-gradient-to-t to-transparent svelte-65uuke"></div>
+                            
+                            <div class="mx-auto max-w-7xl">
+                                <div class="my-8 h-1 sm:my-12 !mt-0">
+                                    <svg class="stroke-muted-foreground text-muted-foreground opactity-50 h-1 w-full">
+                                        <line x1="0" y1="0" x2="100%" y2="0" stroke-width="1" stroke="currentColor"></line>
+                                    </svg>
+                                </div>
+                                
+                                <!-- Tech Stack Section -->
+                                <div>
+                                    <h2 class="pb-4 text-3xl font-bold">Technical Skills</h2>
+                                    <div class="grid grid-cols-3 place-items-center gap-4 pt-4 sm:grid-cols-3 sm:gap-8 md:grid-cols-4 xl:grid-cols-8">
+                                        <div class="bg-accent-foreground/10 flex aspect-square w-20 flex-col items-center justify-center gap-2 rounded-md backdrop-blur-sm transition-transform hover:scale-110 sm:w-32">
+                                            <svg viewBox="0 0 24 24" class="size-8 fill-current transition-colors sm:size-12">
+                                                <path d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.523-.29-1.047-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.327 1.681H3.652l1.23-6.326h2.65c.797 0 1.378.209 1.744.628.366.418.476 1.002.33 1.752a2.836 2.836 0 0 1-.305.847c-.143.255-.33.49-.561.703zm4.024.715l.543-2.799c.063-.318.039-.536-.068-.651-.107-.116-.336-.174-.687-.174H11.46l-.704 3.625H9.388l1.23-6.327h1.367l-.327 1.682h1.218c.767 0 1.295.134 1.586.401s.378.7.263 1.299l-.572 2.944h-1.389zm7.597-2.265a2.782 2.782 0 0 1-.305.847c-.143.255-.33.49-.561.703a2.44 2.44 0 0 1-.917.551c-.336.108-.765.164-1.286.164h-1.18l-.327 1.682h-1.378l1.23-6.326h2.649c.797 0 1.378.209 1.744.628.366.417.477 1.001.331 1.751zM17.766 10.207h-.943l-.516 2.648h.838c.557 0 .971-.105 1.242-.314.272-.21.455-.559.551-1.049.092-.47.049-.802-.125-.995s-.524-.29-1.047-.29z"/>
+                                            </svg>
+                                            <span class="text-center text-sm font-medium">PHP</span>
+                                        </div>
+                                        <div class="bg-accent-foreground/10 flex aspect-square w-20 flex-col items-center justify-center gap-2 rounded-md backdrop-blur-sm transition-transform hover:scale-110 sm:w-32">
+                                            <svg viewBox="0 0 24 24" class="size-8 fill-current transition-colors sm:size-12">
+                                                <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                                            </svg>
+                                            <span class="text-center text-sm font-medium">JavaScript</span>
+                                        </div>
+                                        <div class="bg-accent-foreground/10 flex aspect-square w-20 flex-col items-center justify-center gap-2 rounded-md backdrop-blur-sm transition-transform hover:scale-110 sm:w-32">
+                                            <svg viewBox="0 0 24 24" class="size-8 fill-current transition-colors sm:size-12">
+                                                <path d="M16.633 16.504c.869-.075 1.543-.84 1.499-1.754-.046-.914-.795-1.648-1.708-1.648h-.061c-.943.031-1.678.824-1.648 1.769.03.479.226.869.494 1.153-1.048 2.038-2.621 3.536-5.004 4.795-1.603.838-3.296 1.154-4.944.929-1.378-.194-2.456-.81-3.116-1.798-.988-1.499-1.078-3.116-.255-4.734.601-1.169 1.499-2.023 2.099-2.443-.15-.389-.33-1.048-.42-1.542-4.436 3.177-3.985 7.521-2.637 9.574 1.004 1.498 3.057 2.456 5.304 2.456.599 0 1.229-.044 1.843-.194 3.896-.749 6.847-3.086 8.54-6.532l.014-.031zM21.981 12.758c-2.321-2.727-5.738-4.225-9.634-4.225h-.51c-.253-.554-.837-.899-1.497-.899h-.045c-.943 0-1.678.81-1.647 1.753.03.898.794 1.648 1.708 1.648h.074c.675-.03 1.259-.45 1.498-1.049h.555c2.309 0 4.495.674 6.488 1.992 1.527 1.004 2.622 2.322 3.236 3.896.538 1.288.509 2.547-.045 3.597-.854 1.647-2.293 2.517-4.195 2.517-1.199 0-2.367-.375-2.967-.644-.359.298-.959.793-1.394 1.093 1.318.598 2.652.943 3.94.943 2.922 0 5.093-1.647 5.918-3.236.898-1.798.824-4.824-1.469-7.416l-.014.03zM6.49 17.042c.029.899.793 1.648 1.708 1.648h.06c.959-.03 1.693-.823 1.648-1.768 0-.899-.779-1.647-1.693-1.647h-.061c-.06 0-.149 0-.225.029-1.243-2.098-1.768-4.346-1.572-6.771.119-1.828.719-3.417 1.797-4.735.899-1.124 2.592-1.679 3.746-1.708 3.236-.061 4.585 3.971 4.689 5.574l1.498.449c-.345-4.914-3.4-7.492-6.322-7.492-2.742 0-5.273 1.993-6.293 4.915-1.393 3.896-.479 7.641 1.229 10.638-.149.195-.239.539-.209.868z"/>
+                                            </svg>
+                                            <span class="text-center text-sm font-medium">React</span>
+                                        </div>
+                                        <div class="bg-accent-foreground/10 flex aspect-square w-20 flex-col items-center justify-center gap-2 rounded-md backdrop-blur-sm transition-transform hover:scale-110 sm:w-32">
+                                            <svg viewBox="0 0 24 24" class="size-8 fill-current transition-colors sm:size-12">
+                                                <path d="M23.644 5.43c.009.032.014.065.014.099v5.15c0 .135-.073.26-.189.326l-4.323 2.49v4.934c0 .135-.073.258-.188.326L9.931 23.95c-.021.012-.043.02-.066.027-.008.002-.016.008-.024.01-.063.018-.13.018-.192 0-.013-.004-.025-.012-.038-.018-.01-.004-.018-.006-.027-.01-.024-.01-.045-.018-.066-.03L.534 18.755c-.117-.068-.189-.191-.189-.326V2.974c0-.033.005-.066.014-.098.003-.012.01-.021.014-.032.006-.01.009-.022.017-.032.008-.01.018-.017.027-.025.012-.01.025-.018.039-.024.016-.01.032-.017.048-.024.012-.004.023-.014.036-.016.03-.01.061-.012.09-.012.032 0 .064.004.095.014.013.003.026.015.04.022.016.008.03.015.045.022.015.012.029.027.043.04.009.01.016.02.025.033.012.01.022.02.03.033.01.011.017.025.023.038.007.01.018.015.025.027l3.958 7.617 4.937 2.865V4.163c0-.033.006-.064.015-.098.003-.011.009-.021.013-.032.007-.012.013-.023.021-.033.007-.01.014-.018.022-.025.011-.009.022-.018.036-.024.022-.015.038-.02.058-.027.006-.002.015-.002.022-.004.029-.01.061-.01.09-.01.032 0 .064.004.095.012.014.003.025.015.039.022.017.008.032.015.047.023.012.01.025.012.034.023.012.016.029.023.039.038.011.01.014.021.025.033.01.01.021.021.028.033.009.01.014.076.025.028l7.878 13.681 3.194-1.842V8.015l-3.995-6.948c-.039-.065-.052-.126-.038-.184.013-.061.049-.11.107-.143.02-.01.039-.022.061-.028.005 0 .009-.005.014-.005.015-.003.033-.012.052-.012.038 0 .071.005.105.016.012.002.025.008.035.012.03.006.055.018.08.032.007.005.013.01.02.017.012.012.022.023.034.038.009.009.018.021.024.033.014.02.023.039.033.06v.001l3.331 5.778 3.516-2.024c.035-.02.072-.032.111-.038.012-.002.021-.005.033-.005.042 0 .079.006.112.021.059.027.094.08.106.143.015.055.001.116-.037.181l-3.558 6.166v4.928c0 .065-.02.126-.057.176-.037.051-.092.086-.158.102-.038.01-.075.014-.113.014-.038 0-.076-.004-.112-.014-.016-.002-.031-.012-.046-.018-.032-.012-.062-.03-.09-.052-.008-.008-.011-.02-.02-.03s-.021-.019-.027-.03c-.014-.02-.022-.038-.032-.06-.006-.019-.015-.035-.02-.053 0-.002-.003-.002-.003-.006-.001-.001 0-.004-.001-.004L12.722 7.783 8.177 15.52c-.031.052-.072.091-.122.119-.006.008-.015.01-.023.016-.012.008-.022.016-.036.024-.009.004-.015.01-.026.012-.031.012-.063.02-.098.02-.038 0-.075-.008-.112-.02-.012-.002-.023-.01-.035-.012-.014-.01-.025-.018-.036-.027l-.017-.014c-.012-.008-.019-.022-.029-.03-.015-.012-.025-.013-.037-.024-.025-.022-.064-.084-.075-.121-.001-.005-.001-.009 0-.008z"/>
+                                            </svg>
+                                            <span class="text-center text-sm font-medium">Laravel</span>
+                                        </div>
+                                        <div class="bg-accent-foreground/10 flex aspect-square w-20 flex-col items-center justify-center gap-2 rounded-md backdrop-blur-sm transition-transform hover:scale-110 sm:w-32">
+                                            <svg viewBox="0 0 24 24" class="size-8 fill-current transition-colors sm:size-12">
+                                                <path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"></path>
+                                            </svg>
+                                            <span class="text-center text-sm font-medium">TypeScript</span>
+                                        </div>
+                                        <div class="bg-accent-foreground/10 flex aspect-square w-20 flex-col items-center justify-center gap-2 rounded-md backdrop-blur-sm transition-transform hover:scale-110 sm:w-32">
+                                            <svg viewBox="0 0 640 512" class="size-8 fill-current transition-colors sm:size-12">
+                                                <path d="M180.41 203.01c-.72 22.65 10.6 32.68 10.88 39.05a8.164 8.164 0 0 1-4.1 6.27l-12.8 8.96a10.66 10.66 0 0 1-5.63 1.92c-.43-.02-8.19 1.83-20.48-25.61a78.608 78.608 0 0 1-62.61 29.45c-16.28.89-60.4-9.24-58.13-56.21-1.59-38.28 34.06-62.06 70.93-60.05 7.1.02 21.6.37 46.99 6.27v-15.62c2.69-26.46-14.7-46.99-44.81-43.91-2.4.01-19.4-.5-45.84 10.11-7.36 3.38-8.3 2.82-10.75 2.82-7.41 0-4.36-21.48-2.94-24.2 5.21-6.4 35.86-18.35 65.94-18.18a76.857 76.857 0 0 1 55.69 17.28 70.285 70.285 0 0 1 17.67 52.36l-.01 69.29zM93.99 235.4c32.43-.47 46.16-19.97 49.29-30.47 2.46-10.05 2.05-16.41 2.05-27.4-9.67-2.32-23.59-4.85-39.56-4.87-15.15-1.14-42.82 5.63-41.74 32.26-1.24 16.79 11.12 31.4 29.96 30.48zm170.92 23.05c-7.86.72-11.52-4.86-12.68-10.37l-49.8-164.65c-.97-2.78-1.61-5.65-1.92-8.58a4.61 4.61 0 0 1 3.86-5.25c.24-.04-2.13 0 22.25 0 8.78-.88 11.64 6.03 12.55 10.37l35.72 140.83 33.16-140.83c.53-3.22 2.94-11.07 12.8-10.24h17.16c2.17-.18 11.11-.5 12.68 10.37l33.42 142.63L420.98 80.1c.48-2.18 2.72-11.37 12.68-10.37h19.72c.85-.13 6.15-.81 5.25 8.58-.43 1.85 3.41-10.66-52.75 169.9-1.15 5.51-4.82 11.09-12.68 10.37h-18.69c-10.94 1.15-12.51-9.66-12.68-10.75L328.67 110.7l-32.78 136.99c-.16 1.09-1.73 11.9-12.68 10.75h-18.3zm273.48 5.63c-5.88.01-33.92-.3-57.36-12.29a12.802 12.802 0 0 1-7.81-11.91v-10.75c0-8.45 6.2-6.9 8.83-5.89 10.04 4.06 16.48 7.14 28.81 9.6 36.65 7.53 52.77-2.3 56.72-4.48 13.15-7.81 14.19-25.68 5.25-34.95-10.48-8.79-15.48-9.12-53.13-21-4.64-1.29-43.7-13.61-43.79-52.36-.61-28.24 25.05-56.18 69.52-55.95 12.67-.01 46.43 4.13 55.57 15.62 1.35 2.09 2.02 4.55 1.92 7.04v10.11c0 4.44-1.62 6.66-4.87 6.66-7.71-.86-21.39-11.17-49.16-10.75-6.89-.36-39.89.91-38.41 24.97-.43 18.96 26.61 26.07 29.7 26.89 36.46 10.97 48.65 12.79 63.12 29.58 17.14 22.25 7.9 48.3 4.35 55.44-19.08 37.49-68.42 34.44-69.26 34.42zm40.2 104.86c-70.03 51.72-171.69 79.25-258.49 79.25A469.127 469.127 0 0 1 2.83 327.46c-6.53-5.89-.77-13.96 7.17-9.47a637.37 637.37 0 0 0 316.88 84.12 630.22 630.22 0 0 0 241.59-49.55c11.78-5 21.77 7.8 10.12 16.38zm29.19-33.29c-8.96-11.52-59.28-5.38-81.81-2.69-6.79.77-7.94-5.12-1.79-9.47 40.07-28.17 105.88-20.1 113.44-10.63 7.55 9.47-2.05 75.41-39.56 106.91-5.76 4.87-11.27 2.3-8.71-4.1 8.44-21.25 27.39-68.49 18.43-80.02z"/>
+                                            </svg>
+                                            <span class="text-center text-sm font-medium">AWS</span>
+                                        </div>
+                                        <div class="bg-accent-foreground/10 flex aspect-square w-20 flex-col items-center justify-center gap-2 rounded-md backdrop-blur-sm transition-transform hover:scale-110 sm:w-32">
+                                            <svg viewBox="0 0 24 24" class="size-8 fill-current transition-colors sm:size-12">
+                                                <path d="M9.95 13.4h1.453v-5.18H9.95v.627c-.323-.433-.883-.772-1.66-.772-1.543 0-2.797 1.33-2.797 2.98 0 1.648 1.254 2.97 2.797 2.97.777 0 1.337-.338 1.66-.772v.147zm0-2.345c0 .852-.61 1.4-1.373 1.4-.764 0-1.373-.548-1.373-1.4 0-.853.61-1.4 1.373-1.4.764 0 1.374.547 1.374 1.4zm3.239 2.345h1.454V8.22h-1.453v5.18zm0-6.295v1.05h1.454v-1.05h-1.454zm6.318 2.752L17.67 8.56h-1.34l2.935 4.883L16.33 18.44h1.34l2.934-5.004L23.54 8.56h-1.342l-1.778 1.942zm-9.976 3.543V3h-1.454v8.73c0 .853.695 1.547 1.548 1.547h.98v-1.3h-.735c-.188 0-.339-.15-.339-.339zm-7.066 0V3H1.008v8.73c0 .853.696 1.547 1.55 1.547h.978v-1.3h-.735c-.188 0-.34-.15-.34-.339z"/>
+                                            </svg>
+                                            <span class="text-center text-sm font-medium">Node.js</span>
+                                        </div>
+                                        <div class="bg-accent-foreground/10 flex aspect-square w-20 flex-col items-center justify-center gap-2 rounded-md backdrop-blur-sm transition-transform hover:scale-110 sm:w-32">
+                                            <svg viewBox="0 0 24 24" class="size-8 fill-current transition-colors sm:size-12">
+                                                <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"></path>
+                                            </svg>
+                                            <span class="text-center text-sm font-medium">Tailwind</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap gap-2 mt-8">
+                                        <span class="tech-badge">Docker</span>
+                                        <span class="tech-badge">REST APIs</span>
+                                        <span class="tech-badge">GraphQL</span>
+                                        <span class="tech-badge">DynamoDB</span>
+                                        <span class="tech-badge">MySQL</span>
+                                        <span class="tech-badge">PostgreSQL</span>
+                                        <span class="tech-badge">CI/CD</span>
+                                        <span class="tech-badge">Microservices</span>
+                                        <span class="tech-badge">Event-Driven</span>
+                                        <span class="tech-badge">Serverless</span>
+                                        <span class="tech-badge">Redis</span>
+                                        <span class="tech-badge">Angular</span>
+                                        <span class="tech-badge">Firebase</span>
+                                        <span class="tech-badge">MongoDB</span>
+                                        <span class="tech-badge">Terraform</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="my-8 h-1 sm:my-12">
+                                    <svg class="stroke-muted-foreground text-muted-foreground opactity-50 h-1 w-full">
+                                        <line x1="0" y1="0" x2="100%" y2="0" stroke-width="1" stroke="currentColor"></line>
+                                    </svg>
+                                </div>
+                                
+                                <!-- Experience Section -->
+                                <div>
+                                    <h2 class="pb-4 text-3xl font-bold">Work Experience</h2>
+                                    <div class="mt-6">
+                                        <div class="timeline-item">
+                                            <h3 class="text-xl font-bold">Senior Full Stack/Software Engineer</h3>
+                                            <p class="text-muted-foreground">A2Z Sync (Amazon Autos) | July 2023 - January 2025</p>
+                                            <ul class="list-disc ml-6 mt-3">
+                                                <li>Implemented event-driven PHP/Laravel backend serving 500K+ daily users</li>
+                                                <li>Built RESTful APIs following SOLID principles achieving 99.99% uptime</li>
+                                                <li>Implemented comprehensive PHPUnit test suite with 90%+ coverage</li>
+                                                <li>Worked with AWS services including SQS, Lambda, EC2, and S3</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="timeline-item">
+                                            <h3 class="text-xl font-bold">Full Stack/Software Engineer</h3>
+                                            <p class="text-muted-foreground">Genvid: Silent Hill: Ascension | July 2022 - October 2023</p>
+                                            <ul class="list-disc ml-6 mt-3">
+                                                <li>Built real-time interactive streaming platform handling 125K+ concurrent viewers</li>
+                                                <li>Implemented live polling system using AWS SQS with DynamoDB</li>
+                                                <li>Created React-based interactive overlays for the game</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="timeline-item">
+                                            <h3 class="text-xl font-bold">Lead Migration/Full Stack Engineer</h3>
+                                            <p class="text-muted-foreground">Thrasio Inc. | March 2020 - June 2022</p>
+                                            <ul class="list-disc ml-6 mt-3">
+                                                <li>Led a team of 9 engineers, managing technical acquisition integrations</li>
+                                                <li>Set quarterly OKRs, planned sprints, and managed feature development</li>
+                                                <li>Built automated compliance scanning tool reducing site audit time from 2 hours to 20 minutes</li>
+                                                <li>Orchestrated migrations from various e-commerce platforms into a unified ecosystem</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="timeline-item">
+                                            <h3 class="text-xl font-bold">Full Stack Engineer</h3>
+                                            <p class="text-muted-foreground">Varsity News Network (VNN) Inc. | September 2018 - March 2020</p>
+                                            <ul class="list-disc ml-6 mt-3">
+                                                <li>Developed SaaS athletics management system for 2,000+ schools</li>
+                                                <li>Enhanced real-time scoring system processing 50K+ concurrent game updates</li>
+                                                <li>Built features for headless CMS integration</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="my-8 h-1 sm:my-12">
+                                    <svg class="stroke-muted-foreground text-muted-foreground opactity-50 h-1 w-full">
+                                        <line x1="0" y1="0" x2="100%" y2="0" stroke-width="1" stroke="currentColor"></line>
+                                    </svg>
+                                </div>
+                                
+                                <!-- Projects Section -->
+                                <div>
+                                    <h2 class="pb-4 text-3xl font-bold">Notable Projects</h2>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                                        <div class="project-card">
+                                            <h3 class="text-xl font-bold">Amazon Autos (A2Z Sync)</h3>
+                                            <p class="mt-2 text-muted-foreground">
+                                                Played a key role in the launch of Amazon's automotive platform, building backend systems serving 500K+ daily users. Implemented event-driven architecture using Laravel and AWS services.
+                                            </p>
+                                            <div class="flex flex-wrap gap-2 mt-4">
+                                                <span class="tech-badge">Laravel</span>
+                                                <span class="tech-badge">AWS</span>
+                                                <span class="tech-badge">PHP</span>
+                                                <span class="tech-badge">SQS</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="project-card">
+                                            <h3 class="text-xl font-bold">Silent Hill: Ascension</h3>
+                                            <p class="mt-2 text-muted-foreground">
+                                                Led integration of Emmy-winning interactive streaming platform for this AAA game. Created interactive features allowing viewers to participate in the storyline through real-time decisions.
+                                            </p>
+                                            <div class="flex flex-wrap gap-2 mt-4">
+                                                <span class="tech-badge">React</span>
+                                                <span class="tech-badge">AWS</span>
+                                                <span class="tech-badge">DynamoDB</span>
+                                                <span class="tech-badge">WebSockets</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="project-card">
+                                            <h3 class="text-xl font-bold">Thrasio Brands</h3>
+                                            <p class="mt-2 text-muted-foreground">
+                                                Managed development, migrations, and operations for 200+ eCommerce websites and 800+ domains. Notable properties include ostohome.com, vybepercussion.com, and angryorange.com.
+                                            </p>
+                                            <div class="flex flex-wrap gap-2 mt-4">
+                                                <span class="tech-badge">PHP</span>
+                                                <span class="tech-badge">Laravel</span>
+                                                <span class="tech-badge">JavaScript</span>
+                                                <span class="tech-badge">AWS</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="project-card">
+                                            <h3 class="text-xl font-bold">VNN Platform</h3>
+                                            <p class="mt-2 text-muted-foreground">
+                                                All-in-one web application for athletics departments, serving 2,000+ schools across the United States. Built with AngularJS, React, TypeScript, GraphQL, Apollo, and Symfony2.
+                                            </p>
+                                            <div class="flex flex-wrap gap-2 mt-4">
+                                                <span class="tech-badge">Angular</span>
+                                                <span class="tech-badge">React</span>
+                                                <span class="tech-badge">GraphQL</span>
+                                                <span class="tech-badge">TypeScript</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="my-8 h-1 sm:my-12">
+                                    <svg class="stroke-muted-foreground text-muted-foreground opactity-50 h-1 w-full">
+                                        <line x1="0" y1="0" x2="100%" y2="0" stroke-width="1" stroke="currentColor"></line>
+                                    </svg>
+                                </div>
+                                
+                                <!-- Education Section -->
+                                <section>
+                                    <h2 class="pb-4 text-3xl font-bold">Education</h2>
+                                    <div class="mt-4">
+                                        <h3 class="text-xl font-bold">Bachelor of Science in Computer Science (Cum Laude)</h3>
+                                        <p>Texas State University, San Marcos, TX | August 2011 - May 2015</p>
+                                    </div>
+                                </section>
+                                
+                                <div class="my-8 h-1 sm:my-12">
+                                    <svg class="stroke-muted-foreground text-muted-foreground opactity-50 h-1 w-full">
+                                        <line x1="0" y1="0" x2="100%" y2="0" stroke-width="1" stroke="currentColor"></line>
+                                    </svg>
+                                </div>
+                                
+                                <!-- Contact Section -->
+                                <section>
+                                    <h2 class="pb-4 text-3xl font-bold">Contact</h2>
+                                    <div class="flex flex-col gap-4 max-w-lg">
+                                        <div class="flex items-center gap-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                            </svg>
+                                            <a href="tel:9566482263" class="text-lg hover:underline">(956) 648-2263</a>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                                <polyline points="22,6 12,13 2,6"></polyline>
+                                            </svg>
+                                            <a href="mailto:hello@joshplaza.com" class="text-lg hover:underline">hello@joshplaza.com</a>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                            </svg>
+                                            <a href="https://github.com/hexagonstorms" target="_blank" class="text-lg hover:underline">github.com/hexagonstorms</a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </main>
+                    
+                    <div class="h-1 my-0 sm:my-0">
+                        <svg class="stroke-muted-foreground text-muted-foreground opactity-50 h-1 w-full">
+                            <line x1="0" y1="0" x2="100%" y2="0" stroke-width="1" stroke="currentColor"></line>
+                        </svg>
+                    </div>
+                    
+                    <footer class="flex w-full flex-col items-center justify-center py-12 text-sm">
+                        <p class="py-8">Based in Portland, Oregon (originally from Texas)</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comment out the posthog config script for local testing -->
+    <!-- <script type="text/javascript" crossorigin="anonymous" src="./posthog-config.js"></script> -->
+</body>
+</html>

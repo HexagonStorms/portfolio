@@ -1,0 +1,16 @@
+/* Main stylesheet that imports all component styles */
+
+/* Base styles */
+@import url('tailwind-base.css');
+
+/* Animation styles */
+@import url('animations.css');
+
+/* Social media icon animations */
+@import url('social-icons.css');
+
+/* Component styles */
+@import url('components.css');
+
+/* Toast notification styles */
+@import url('toast-notifications.css');
