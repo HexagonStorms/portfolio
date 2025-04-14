@@ -1,6 +1,18 @@
-# Main Website
+# Josh Plaza - Personal Website
 
-This is a simple static website built with HTML, CSS, and JavaScript.
+This is my (Josh Plaza) personal website showcasing my professional experience, skills, and career as a Senior Software Engineer based in Portland, Oregon.
+
+## About This Site
+
+This website was built using:
+- HTML5 for structure
+- CSS3 with a custom organization system for styling
+- JavaScript for interactivity
+- Custom fonts (Geist and GeistMono)
+- PostHog for analytics tracking
+- Claude Code
+
+The site is intentionally designed to be lightweight, with no frameworks or build tools required, focusing on performance and simplicity while still providing a modern, responsive experience.
 
 ## Local Development
 
