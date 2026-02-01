@@ -26,19 +26,19 @@
     <!-- Comment out the analytics script for local testing -->
     <!-- <script defer="" data-domain="josh.plaza" src="./analytics.js"></script> -->
     
-    <meta name="description" content="Senior Software Engineer with over 10 years of experience in PHP, JavaScript, Laravel, React, AWS, and more. Based in Portland, Oregon.">
+    <meta name="description" content="Senior Software Engineer with 10+ years of experience in PHP, JavaScript, Laravel, React, AWS, and more. Based in Portland, Oregon.">
     <meta name="keywords" content="software engineer,PHP,JavaScript,Laravel,React,AWS,full stack,Portland,Texas">
     <meta name="author" content="Josh Plaza">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://joshplaza.com">
     <meta property="og:title" content="Josh Plaza | Senior Software Engineer">
-    <meta property="og:description" content="Senior Software Engineer with over 10 years of experience in PHP, JavaScript, Laravel, React, AWS, and more.">
+    <meta property="og:description" content="Senior Software Engineer with 10+ years of experience in PHP, JavaScript, Laravel, React, AWS, and more.">
     <meta property="og:image" content="https://joshplaza.com/images/josh-plaza.jpg">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://joshplaza.com">
     <meta property="twitter:title" content="Josh Plaza | Senior Software Engineer">
-    <meta property="twitter:description" content="Senior Software Engineer with over 10 years of experience based in Portland, Oregon.">
+    <meta property="twitter:description" content="Senior Software Engineer with 10+ years of experience based in Portland, Oregon.">
     <meta property="twitter:image" content="https://joshplaza.com/images/josh-plaza.jpg">
     
     <!-- Custom styles moved to custom-components.css -->
@@ -94,7 +94,7 @@
                                             Portland, Oregon
                                         </span>
                                     </div>
-                                    <h2 class="text-pretty sm:text-lg lg:text-xl">Senior Software Engineer with over 10 years of experience, specializing in <strong>PHP</strong>, <strong>JavaScript</strong>, <strong>Laravel</strong>, and <strong>React</strong>.</h2>
+                                    <h2 class="text-pretty sm:text-lg lg:text-xl">Senior Software Engineer with over <span id="years-experience"></span> years of experience, specializing in <strong>PHP</strong>, <strong>JavaScript</strong>, <strong>Laravel</strong>, and <strong>React</strong>.</h2>
                                     <p class="prose sm:text-lg">I build robust, scalable applications that solve real business problems. My expertise spans from developing interactive front-end interfaces to designing efficient backend systems. Check out my experience below to see how I've helped companies ship better products faster.</p>
                                     
                                     <div class="flex items-center gap-3 mt-4">
@@ -469,7 +469,7 @@
                                     <div class="flex flex-col gap-4 max-w-lg">
                                         <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-800 transition-colors group">
                                             <i class="fas fa-phone text-xl p-2 group-hover:text-purple-400 transition-colors bg-gray-900 rounded-full"></i>
-                                            <a href="tel:9566482263" class="text-lg group-hover:text-purple-200 transition-colors">(956) 648-2263</a>
+                                            <a href="tel:5034200044" class="text-lg group-hover:text-purple-200 transition-colors">(503) 420-0044</a>
                                         </div>
                                         <div class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-800 transition-colors group">
                                             <i class="fas fa-envelope text-xl p-2 group-hover:text-purple-400 transition-colors bg-gray-900 rounded-full"></i>
@@ -495,6 +495,7 @@
                         <div class="flex flex-col items-center justify-center">
                             <img src="./assets/portland3.png" alt="Portland, Oregon" class="mb-2 portland-footer">
                             <p class="py-2">Made in Portland, Oregon</p>
+                            <p class="text-gray-500">&copy; <span id="copyright-year"></span> Josh Plaza. All rights reserved.</p>
                         </div>
                     </footer>
                 </div>
@@ -503,5 +504,13 @@
     </div>
 
     <script type="text/javascript" crossorigin="anonymous" src="./posthog-config.js"></script>
+    <script>
+        // Calculate years of experience from 2015
+        const startYear = 2015;
+        const currentYear = new Date().getFullYear();
+        const yearsExperience = currentYear - startYear;
+        document.getElementById('years-experience').textContent = yearsExperience;
+        document.getElementById('copyright-year').textContent = currentYear;
+    </script>
 </body>
 </html>
